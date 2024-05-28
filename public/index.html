@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ton miniTasks</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <img src="/static/images/logo.png" alt="Logo" class="logo">
+        <span class="balance">Баланс: 1000 TON</span>
+    </div>
+    <div class="header-right">
+        <button id="profile-button">
+            <img src="/static/images/avatar.png" alt="Avatar" class="avatar">
+        </button>
+    </div>
+</header>
+<div class="news-header">
+    <h2 class="news-title">Новости</h2>
+    <div class="news-window">
+        <div class="news-content" id="achievements-content">
+            <img src="/static/images/congrats.png" alt="congrats" class="news-image">
+            <span class="news-text">Congratulations</span>
+        </div>
+        <div class="news-content" id="updates-content" style="display: none;">
+            <img src="/static/images/newspapper.png" alt="newspapper" class="news-image">
+            <span class="news-text">New updates available!</span>
+        </div>
+    </div>
+</div>
+
+<div class="task-header">
+    <h2>Задания</h2>
+    <div class="task-actions">
+        <button class="filter-button">
+            <img src="/static/images/filter.png" alt="Filter" class="icon">
+        </button>
+        <button class="create-task-button">+ Создать задание</button>
+    </div>
+</div>
+
+<section class="slider">
+    <button class="slider-button active" id="all">Все</button>
+    <button class="slider-button" id="recommended">Рекомендуемые</button>
+    <button class="slider-button" id="referrals">Рефки</button>
+    <button class="slider-button" id="likes">Лайки</button>
+    <button class="slider-button" id="subscribe">Подписаться</button>
+    <button class="slider-button" id="other">Другое</button>
+</section>
+<section id="tasks" class="tasks">
+    <!-- Задания будут загружаться сюда -->
+</section>
+<script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    /*background-color: #f0f0f0;*/
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0460C3;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 40px; /* Установить ширину для логотипа */
+    border-radius: 50%; /* Сделать логотип круглым */
+    margin-right: 15px;
+    border: 1px solid;
+}
+
+.balance {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+#profile-button {
+    background-color: #99CAFF;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#profile-button .avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%; /* Сделать аватарку круглой */
+}
+.news-header {
+    padding: 10px 20px;
+    /*background-color: #fff;*/
+    text-align: left;
+}
+
+.news-title {
+    margin: 0;
+    color: #888; /* Серый цвет текста */
+    font-size: 11px
+}
+
+.news-window {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирование текста */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    /* Установка фонового изображения */
+    background-size: cover; /* Масштабирование изображения */
+    background-position: center; /* Центрирование изображения */
+    height: 100px; /* Высота окна новостей */
+    position: relative;
+}
+
+.news-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.news-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Цвет текста для контраста с фоном */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень для улучшения читаемости */
+    z-index: 1; /* Поместить текст над фоном */
+}
+
+.news-image {
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    /*width: 180px;*/
+    height: 50px;
+    transform: rotate(30deg)
+
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.task-header h2 {
+    margin: 0;
+    color: #888; /* Серый цвет текста */
+    font-size: 12px;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.filter-button,
+.create-task-button {
+    margin-left: 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 28px; /* Установите высоту кнопок, чтобы они были одинаковыми */
+}
+
+.filter-button .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    padding:3px;
+    padding-left: 10px;
+    /*padding-top: 3px;*/
+    /*background-color: #E8E8E8;*/
+    border: none;
+    border-radius: 5px;
+}
+
+.slider-button {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #0460C3;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 28px;
+    font-size: 11px;
+}
+
+.slider-button:hover,
+.slider-button.active {
+    background-color: #003B7A;
+}
+
+.tasks {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 400px;
+}
+
+.task-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    cursor: pointer; /* Добавить указатель при наведении */
+}
+
+.task-image {
+    width: 120px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item h3 {
+    margin: 5px 0;
+}
+
+.task-item p {
+    margin: 5px 0;
+}
+
+.task-item a {
+    color: #003B7A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.task-details-page {
+    padding: 20px;
+}
+
+.task-details-page img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.task-details-page h1 {
+    margin: 10px 0;
+}
+
+.task-details-page p {
+    margin: 5px 0;
+}
+
+.task-details-page a {
+    color: #003B7A;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 0;
+}
