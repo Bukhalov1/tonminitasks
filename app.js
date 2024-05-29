@@ -4,7 +4,9 @@ const app = express();
 require('dotenv').config();
 const routes = require('./src/routes/routes');
 
-const port = process.env.PORT || 3000;
+const PORT = 3001;
+
+const port = process.env.PORT || PORT;
 
 // Middleware для обработки статических файлов
 app.use(express.static(path.join(__dirname, 'public')));
