@@ -38,3 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
             taskDetailsContainer.textContent = 'Task not found';
         });
 });
+

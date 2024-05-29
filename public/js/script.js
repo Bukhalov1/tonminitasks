@@ -86,3 +86,4 @@ document.addEventListener('DOMContentLoaded', function() {
         isAchievementsVisible = !isAchievementsVisible;
     }, 5000);
 });
+
