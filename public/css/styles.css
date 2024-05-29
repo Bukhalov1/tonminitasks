@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     text-align: center;
-    /*background-color: #f0f0f0;*/
+    background-color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -56,14 +56,14 @@ header {
 }
 .news-header {
     padding: 10px 20px;
-    /*background-color: #fff;*/
+    background-color: #fff;
     text-align: left;
 }
 
 .news-title {
     margin: 0;
     color: #888; /* Серый цвет текста */
-    font-size: 11px
+    font-size: 16px
 }
 
 .news-window {
@@ -121,7 +121,7 @@ header {
 .task-header h2 {
     margin: 0;
     color: #888; /* Серый цвет текста */
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .task-actions {
@@ -132,7 +132,7 @@ header {
 .filter-button,
 .create-task-button {
     margin-left: 10px;
-    font-size: 10px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -140,7 +140,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    height: 28px; /* Установите высоту кнопок, чтобы они были одинаковыми */
+    height: 40px; /* Установите высоту кнопок, чтобы они были одинаковыми */
 }
 
 .filter-button .icon {
@@ -154,7 +154,7 @@ header {
     padding:3px;
     padding-left: 10px;
     /*padding-top: 3px;*/
-    /*background-color: #E8E8E8;*/
+    background-color: #fff;
     border: none;
     border-radius: 5px;
 }
@@ -170,8 +170,8 @@ header {
     background-color: #0460C3;
     cursor: pointer;
     border-radius: 5px;
-    height: 28px;
-    font-size: 11px;
+    height: 40px;
+    font-size: 16px;
 }
 
 .slider-button:hover,
