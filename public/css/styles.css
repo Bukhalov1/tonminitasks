@@ -31,7 +31,7 @@ header {
 
 .balance {
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .header-right {
@@ -55,7 +55,7 @@ header {
     border-radius: 100%; /* Сделать аватарку круглой */
 }
 .news-header {
-    padding: 10px 20px;
+    padding: 20px 20px 10px;
     background-color: #fff;
     text-align: left;
 }
@@ -78,7 +78,7 @@ header {
     /* Установка фонового изображения */
     background-size: cover; /* Масштабирование изображения */
     background-position: center; /* Центрирование изображения */
-    height: 100px; /* Высота окна новостей */
+    height: 130px; /* Высота окна новостей */
     position: relative;
 }
 
@@ -93,10 +93,10 @@ header {
 }
 
 .news-text {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     color: #fff; /* Цвет текста для контраста с фоном */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень для улучшения читаемости */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.5); /* Тень для улучшения читаемости */
     z-index: 1; /* Поместить текст над фоном */
 }
 
@@ -194,6 +194,7 @@ header {
     align-items: center;
     text-align: left;
     cursor: pointer; /* Добавить указатель при наведении */
+    height: 100px;
 }
 
 .task-image {
